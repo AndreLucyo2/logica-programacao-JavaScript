@@ -1,3 +1,41 @@
 <h1>
-    Ola Mundo!
+
+    <script>
+        var nome = prompt("Informe seu nome?")
+
+        alert(nome);
+
+        document.write(`Bem vindo ${nome}`)
+
+    </script>
+
+    <h3>Vamos calcular a média:</h3>
+
+    <script>
+
+        var nota1 = prompt("Informe sua nota1?")
+        var nota2 = prompt("Informe sua nota2?")
+        var nota3 = prompt("Informe sua nota3?")
+        var nota4 = prompt("Informe sua nota4?")
+
+        var soma = (
+            parseFloat(nota1) +
+            parseFloat(nota2) +
+            parseFloat(nota3) +
+            parseFloat(nota4)
+        )
+        //Calculo da media:
+        var media = soma / 4
+        //Saidas:
+        document.write(`Foi informado 4 notas!<br>`)
+        document.write(`Soma das notas: ${soma} pontos <br>`)
+        document.write(`Média: ${media}<br>`)
+
+        if (media > 60) {
+            document.write(`Parabens, voce foi aprovado \O/ !`)
+        } else {
+            document.write(`Infelizmente voce nao atingiu a media esperada`)
+        }
+
+    </script>
 </h1>
